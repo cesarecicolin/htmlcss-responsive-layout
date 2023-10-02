@@ -144,7 +144,7 @@ header{
 #strategic .col{
     min-height: 500px;
 }
- /* RESPONSIVE TABLET */
+ /* RESPONSIVE DESKTOP*/
  @media screen and (min-width:992px) {
     #strategic .column{
         flex-direction: row;
@@ -175,7 +175,7 @@ header{
 
  }
  /* BENEFIT */
-/* RESPONISV TABLET TESTIMONIAL */
+/* RESPONISV TABLET benefit */
 @media screen and (min-width:768px){
     #benefit .column{
         flex-direction: row;
@@ -185,6 +185,12 @@ header{
         width: calc(100% / 2 - 2rem / 2);
     }
 }
+ /* RESPONSIVE DESKTOP*/
+ @media screen and (min-width:992px){
+    #benefit .col{
+        width: calc(100% / 3 - 2rem / 3);
+    }
+ }
  
  /* debug */
  #benefit .col{
