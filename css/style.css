@@ -13,6 +13,9 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+section{
+    padding-top: 2rem;
+}
 /* UTILITY */
 .container{
     width: 90%;
@@ -29,8 +32,13 @@ body{
 .center{
     align-items: center;
 }
-
-
+ 
+.column{
+    flex-direction: column;
+}
+.gap{
+    gap: 1rem;
+}
 /* COMMON */
 
 /* HEADER */
@@ -67,5 +75,22 @@ header{
 
 /* MAIN */
 
+/* <!-- INFORMATION APP --> */
 
+.text{
+    /* debug */
+    background-color: blue;
+    min-height:200px ;
+}
+.img{
+    /* debug */
+    background-color: rgb(255, 115, 0);
+    min-height:200px ;
+}
+/* DEBUG */
+.db-green{
+    background-color: green;
+    min-height: 400px;
+    border: 1px solid black;
+}
 /* FOOTER */
