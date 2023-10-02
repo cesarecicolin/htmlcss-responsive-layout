@@ -121,7 +121,7 @@ header{
         display: flex;
     }
     
-    .text, .img{
+   #info .text, #info .img{
         width: 50%;
     }
 }
@@ -144,5 +144,34 @@ header{
 #strategic .col{
     min-height: 500px;
 }
+ /* RESPONSIVE TABLET */
+ @media screen and (min-width:992px) {
+    #strategic .column{
+        flex-direction: row;
+    }
+    #strategic .col{
+        width:calc(100% / 2 - 1rem / 2);
+    }
+ }
 
+ /* TESTIMONIAL */
+
+
+ /* RESPONISV TABLET TESTIMONIAL */
+ @media screen and (min-width:768px) {
+    #testimonial .col{
+        display: flex;
+    }
+    #testimonial .img {
+        width:40%;
+    }
+    #testimonial .text{
+        width: 60%;
+    }
+ }
+ /* DEBUG */
+ #testimonial .col{
+     min-height: 500px;
+
+ }
 /* FOOTER */
