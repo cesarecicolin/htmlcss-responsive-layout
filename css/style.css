@@ -174,4 +174,20 @@ header{
      min-height: 500px;
 
  }
+ /* BENEFIT */
+/* RESPONISV TABLET TESTIMONIAL */
+@media screen and (min-width:768px){
+    #benefit .column{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #benefit .col{
+        width: calc(100% / 2 - 2rem / 2);
+    }
+}
+ 
+ /* debug */
+ #benefit .col{
+    min-height: 400px;
+ }
 /* FOOTER */
