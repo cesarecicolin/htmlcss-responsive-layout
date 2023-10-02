@@ -12,3 +12,49 @@ img{
 body{
     font-family: 'PT Sans', sans-serif;
 }
+
+/* UTILITY */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.center{
+    align-items: center;
+}
+
+
+/* COMMON */
+
+/* HEADER */
+header{
+    background-color:#0084fd ;
+    
+}
+
+.hei{
+    height: 5rem;
+}
+
+ header nav{
+    display: none;
+}
+
+.nav-menu{
+    list-style-type: none;
+}
+
+
+
+
+/* MAIN */
+
+
+/* FOOTER */
