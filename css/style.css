@@ -177,14 +177,21 @@ header{
     background-color: #9792e4;
 }
 
-/* DEBUG */
-.db-orange{
-    background-color: orange;
-    border: 1px solid black;
+#strategic span{
+    border: 1px solid #9792e4;
+    background-color: #9792e4;
+    border-radius: 50%;
+    padding:1rem;
+    display: inline-block;
 }
+#strategic .text{
+    color: white;
+}
+
+
 .db-white{
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
+    
 } 
 
 
@@ -205,9 +212,29 @@ header{
 
 
  /* RESPONISV TABLET TESTIMONIAL */
+#testimonial .col *{
+    margin: 1rem 0;
+    color: white;
+}
+
+ #testimonial img{  
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+ }
+ #testimonial h2{
+    font-size: 1rem;
+ }
+ #testimonial h3 {
+    color: #9792e4;
+ }
+
+
  @media screen and (min-width:768px) {
     #testimonial .col{
         display: flex;
+        align-items: center;
     }
     #testimonial .img {
         width:40%;
@@ -216,13 +243,26 @@ header{
         width: 60%;
     }
  }
- /* DEBUG */
- #testimonial .col{
-     min-height: 500px;
-
- }
+ 
  /* BENEFIT */
+ #benefit .col h2, h3{
+    color: #9792e4;
+ }
+
+ #benefit .btn-form{
+    background-color: #9792e4;
+    padding: .5rem 1rem;
+    display: inline-block;
+    border: 1px solid #9792e4;
+ }
+
+#benefit .col *{
+    margin: 1rem;
+}
+
 /* RESPONISV TABLET benefit */
+
+
 @media screen and (min-width:768px){
     #benefit .column{
         flex-direction: row;
@@ -241,7 +281,7 @@ header{
  
  /* debug */
  #benefit .col{
-    min-height: 400px;
+    /* min-height: 400px; */
  }
 
  /* ABOUT US */
