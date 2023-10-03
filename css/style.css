@@ -16,6 +16,11 @@ body{
 section{
     padding: 2rem 0;
 }
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
 /* UTILITY */
 .container{
     width: 90%;
@@ -39,6 +44,24 @@ section{
 .gap{
     gap: 1rem;
 }
+.txt-center{
+    text-align: center;
+}
+
+/* FONT SIZE */
+
+.fo-ze{
+    font-size: 2rem;
+}
+.icon-5{
+    font-size: 5rem;
+    color: #0084fd;
+}
+
+/* MARGINI/PADDING */
+.m1{
+    margin: 1rem;
+}
 /* COMMON */
  .col{
     border-radius: 25px;
@@ -46,11 +69,18 @@ section{
 /* HEADER */
 header{
     background-color:#0084fd ;
-    
+    color: white;
 }
 
 .hei{
     height: 5rem;
+}
+
+.hamburger-menu{
+    background-color: transparent;
+    color: inherit;
+    border: 0;
+    font-size: 2rem;
 }
 
  header nav{
@@ -59,6 +89,12 @@ header{
 
 .nav-menu{
     list-style-type: none;
+}
+
+.btn-form{
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 0 .5rem;
 }
 
 /* RESPONSIVE DEKSTOP HEADER */
@@ -70,7 +106,7 @@ header{
         display: none;
     }
     .container {
-        width: 60%
+        width: 80%
     };
 }
 
@@ -79,19 +115,28 @@ header{
 
 /* <!-- INFORMATION APP --> */
 
-.text{
-    /* debug */
-    background-color: blue;
-    min-height:200px ;
+#info h2{
+    color:#0084fd ;
 }
-.img{
-    /* debug */
-    background-color: rgb(255, 115, 0);
-    min-height:200px ;
+#info .col{
+    background-color: #b5ddff;
 }
 
+#info .btn-form{
+    background-color: #0084fd;
+    border: 1px solid #0084fd;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+ #info img{
+    width: 50%;
+ }
 
-
+ #info .col * {
+    margin: 1rem 1rem;
+ }
+ 
 /* RESPONSIVE  TABLET INFO APP */
 @media screen and (min-width:768px) {
     #info .column{
@@ -100,7 +145,7 @@ header{
     }
 
     #info .col:first-child{
-        width: 65%;
+        width: calc(2* 100% / 3 - 2rem /3);
     }
     #info .col{
         width: calc(100% / 3 - 2rem / 3);
@@ -112,8 +157,7 @@ header{
 /* DEBUG */
 .db-green{
     background-color: green;
-    min-height: 400px;
-    border: 1px solid black;
+    
 }
 /* DESKTOP */
 @media screen and (min-width:992px) {
@@ -121,8 +165,11 @@ header{
         display: flex;
     }
     
-   #info .text, #info .img{
-        width: 50%;
+   #info .text {
+        width: 70%;
+    }
+    #info .img{
+        width: 30%;
     }
 }
 /* <!-- STRATEGIC PLAINNIG --> */
@@ -196,4 +243,14 @@ header{
  #benefit .col{
     min-height: 400px;
  }
-/* FOOTER */
+
+ /* ABOUT US */
+
+ @media screen and (min-width:768px) {
+    #about .column {
+        flex-direction: row;
+    }
+    #about .text, #about .img{
+        width: 50%;
+    }
+ }
